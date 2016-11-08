@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6f9f0">
+
+    <TextView
+        android:id="@+id/myDate"
+        android:text="날짜 설정"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:layout_marginLeft="90dp"
+        android:textSize="20dp"
+        android:clickable="true" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/dailyLineGraph"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:layout_marginTop="17dp"
+        android:layout_alignParentStart="true">
+
+    </com.github.mikephil.charting.charts.LineChart>
+
+
+    <TextView
+        android:text="Sleep time :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="35dp"
+        android:textSize="18dp"
+        android:id="@+id/dailySleepTime" />
+
+    <TextView
+        android:text="Sleep duration :"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:textSize="18dp"
+        android:id="@+id/textView3" />
+
+    <TextView
+    android:text="Sleep quality :"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="13dp"
+        android:textSize="18dp"
+    android:id="@+id/textView4" />
+
+    <Button
+        android:id="@+id/btn_chkFin"
+        android:text="확인"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="150dp"
+        android:onClick="btn_chkFin" />
+
+</LinearLayout>
